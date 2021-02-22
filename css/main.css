@@ -1,0 +1,10 @@
+@charset "utf-8";
+:root{
+    /* font */
+    font-family:Gotham Book,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+
+    /* color */
+    --color-dark:#000;
+    --color-light: #fff;
+    --color-red:#eb0a1e;
+}
