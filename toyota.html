@@ -13,12 +13,13 @@
 </head>
 
 <body>
+    <!-- gnb -->
     <nav id="navbar">
-        <div class="navbar-logo"><img src="./img/toyota-logo.png" alt="toyota"></div>
+        <div class="navbar-logo"><img src="./img/common/toyota-logo.png" alt="toyota"></div>
         <div class="gnb">
             <ul>
                 <li><a href="#">MODELS</a></li>
-                <li><a href="#">DEALERS</a></li>
+                <li><a href="#">DEALERS</a></li
                 <li><a href="#">TOYOTA</a></li>
                 <li><a href="#">EVENT</a></li>
                 <li><a href="#">SERVICE</a></li>
@@ -27,6 +28,7 @@
         <div class="hamburger"></div>
     </nav>
 
+    <!-- mainvisual -->
     <section id="main-visual">
         <!-- 슬라이드 구현하기 -->
         <ul>
@@ -56,53 +58,58 @@
         </ul>
     </section>
 
-    <section id="toyota-models">
-        <div class="toyotamodels-menu">
-            <h2>TOYOTA MODELS/h2>
-                <ul class="navbar-menu">
-                    <li>
-                        <a href="#">
-                            <div class>
-                                <figure>
-                                    <img src="./img/main/mirai-side.png" alt="2021-mirai">
-                                    <figcaption itemprop="model-description">2021 Mirai</figcaption>
-                                </figure>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class>
-                                <figure>
-                                    <img src="./img/main/avalonhybrid-side.png" alt="avalonhybrid">
-                                    <figcaption itemprop="model-description">Avalon</figcaption>
-                                </figure>
-                            </div>
-                        </a>
-                    </li>
 
+    <!-- models -->
+    <section id="toyota-models">
+        <div class="models-menu">
+            <h2>TOYOTA MODELS</h2>
+            <ul class="models-nav-menu">
+                <li>
                     <a href="#">
-                        <div class>
+                        <div class="product-models">
+                            <figure>
+                                <img src="./img/main/mirai-side.png" alt="2021-mirai">
+                                <figcaption itemprop="model-description">2021 Mirai</figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="product-models">
+                            <figure>
+                                <img src="./img/main/avalonhybrid-side.png" alt="avalonhybrid">
+                                <figcaption itemprop="model-description">Avalon</figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="product-models">
                             <figure>
                                 <img src="./img/main/highlanderhybrid-side.png" alt="highlander">
                                 <figcaption itemprop="model-description">Highlander</figcaption>
                             </figure>
                         </div>
                     </a>
-                    <li>
-                        <a href="#">
-                            <div class>
-                                <figure>
-                                    <img src="./img/main/camry-side.png" alt="camry">
-                                    <figcaption itemprop="model-description">Camry</figcaption>
-                                </figure>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="product-models">
+                            <figure>
+                                <img src="./img/main/camry-side.png" alt="camry">
+                                <figcaption itemprop="model-description">Camry</figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
 
-        <div class="model-left">
+        <div class="models-left">
             <div>
                 <img src="" alt="2021 mirai">
                 <span>2021 MIRAI 1월 출시</span>
@@ -139,7 +146,7 @@
                 </p>
             </div>
         </div>
-        <div class="model-right">
+        <div class="models-right">
             <p>자세히알아보기</p>
             <img src="./img/common/moredetail.png" alt="detail">
         </div>
@@ -237,19 +244,52 @@
 
         <div class="customise-icon">
             <ul>
-                <li><a href="#"><img src="" alt="icon">브로셔 다운로드</a></li>
-                <li><a href="#"><img src="" alt="icon">내 토요타만들기</a></li>
-                <li><a href="#"><img src="" alt="icon">전시장 찾기</a></li>
-                <li><a href="#"><img src="" alt="icon">시승 신청하기</a></li>
+                <li><a href="#"><img src="./img/brochure-download.png" alt="icon">브로셔 다운로드</a></li>
+                <li><a href="#"><img src="./img/mycar-icon.png" alt="icon">내 토요타만들기</a></li>
+                <li><a href="#"><img src="./img/finddealer-icon.png" alt="icon">전시장 찾기</a></li>
+                <li><a href="#"><img src="./img/apply-icon.png" alt="icon">시승 신청하기</a></li>
             </ul>
         </div>
     </section>
 
     <section id="brandstory">
         <h2>BRAND STORY</h2>
-        <video muted autoplay loop>
-            <source src="./video/toyota-brand.mp4">
-        </video>
+        <!--Hey! This is the original version
+of Simple CSS Waves-->
+
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    <h1>EDGE For FUN FUTURE</h1>
+    </div>
+    <h2>Emotional Distinctive Genius Enjoyable </h2>
+    
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+    
+    <!--Content starts-->
+    <!-- <div class="content flex">
+    <p>Daniel Österman | 2019 | Free to use</p>
+    </div> -->
+    <!--Content ends-->
 
         <div class="brandstory-description">
             <div>
@@ -265,6 +305,36 @@
     </section>
 
     <section id="event-service">
+        <div class="event-box">
+            <ul>
+                <li><a href="#"><img src="" alt="2021 TOYOTA 
+                    DREAM ART CONTEST 
+                    당선자 발표">
+                        2021 TOYOTA<br>
+                        DREAM ART CONTEST<br>
+                        당선자 발표
+                    </a></li>
+                <li><a href="#"><img src="" alt="전국 시승회 이벤트">
+                        전국 시승회 이벤트 <br>
+                        ‘인조이 유어 힐링 드라이브’
+                    </a></li>
+                <li><a href="#"><img src="" alt="온라인 설문조사 당첨자 발표">
+                        온라인 설문조사 당첨자 발표
+                    </a></li>
+            </ul>
+        </div>
+
+        <form action="" method="get" class="form-layout">
+            <fieldset>
+                <div class="input-layout-box">
+                    <label for="search">
+                        <input class="" type="search" name="search" value=""
+                            aria-label="type here to search the toyota dealers">
+                    </label>
+                </div>
+                <a href="#" class="search-icon"><span></span></a>
+            </fieldset>
+        </form>
 
     </section>
 
@@ -277,9 +347,9 @@
             </p>
         </div>
         <div class="sns">
-            <a href="#"><img src="" alt="facebook"></a>
-            <a href="#"><img src="" alt="youtube"></a>
-            <a href="#"><img src="" alt="instargram"></a>
+            <a href="#"><img src="./img/common/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="./img/common/youtube.png" alt="youtube"></a>
+            <a href="#"><img src="./img/common/instagram.png"alt="instargram"></a>
         </div>
     </footer>
 </body>
