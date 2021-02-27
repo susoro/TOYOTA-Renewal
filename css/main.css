@@ -1,34 +1,47 @@
 @charset "utf-8";
+@import "./reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
 :root {
     /* font */
-    font-family: Gotham Book, 'Noto Sans KR', sans-serif;
     /* color */
     --color-dark: #000;
     --color-light: #fff;
     --color-red: #eb0a1e;
-    background-color: #ddd;
 }
 
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
-
-body {
-    margin: 0;
+#navbar {
+    display: flex;
+    margin: 64px 0;
+    position: relative;
+}
+.navbar-logo{margin-left: 146px;}
+.navbar-gnb{
+    position:absolute;
+    top:8px;
+    width:100%;}
+.navbar-gnb-list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:flex-end;
+}
+.navbar-list-btn {
+    margin-right: 32px;
 }
 
-h1 {
-    font-family: Gotham Book, 'Noto Sans KR', sans-serif;
-    /* font-weight: 300; */
-    letter-spacing: 0;
-}
+.navbar-list-btn a {
+    font-size: 24px;
+    font-weight: 500;}
 
-p {
-    font-family: Gotham Book, 'Noto Sans KR', sans-serif;
-    letter-spacing: 1px;
-    color: #000;
-}
 
+
+
+
+
+
+
+/*brand story start  */
 .header {
     position: relative;
     text-align: center;

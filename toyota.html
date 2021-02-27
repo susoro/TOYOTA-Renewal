@@ -9,55 +9,56 @@
     <meta name="author" content="jenn">
     <link rel="icon" href="./img/favi.png" type="image/png">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="https://kit.fontawesome.com/2ee0bcaaa9.js" crossorigin="anonymous"></script>
     <title>TOYOTA</title>
 </head>
 
 <body>
     <!-- gnb -->
     <nav id="navbar">
-        <div class="navbar-logo"><img src="./img/common/toyota-logo.png" alt="toyota"></div>
-        <div class="gnb">
-            <ul>
-                <li><a href="#">MODELS</a></li>
-                <li><a href="#">DEALERS</a></li
-                <li><a href="#">TOYOTA</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="#">SERVICE</a></li>
+        <div class="navbar-logo"><a href="./toyota.html"><img src="./img/common/toyota-logo.png" alt="toyota"></a></div>
+        <div class="navbar-gnb">
+            <ul class="navbar-gnb-list">
+                <li class="navbar-list-btn"><a href="#">MODELS</a></li>
+                <li class="navbar-list-btn"><a href="#">DEALERS</a></li>
+                <li class="navbar-list-btn"><a href="#">TOYOTA</a></li>
+                <li class="navbar-list-btn"><a href="#">EVENT</a></li>
+                <li class="navbar-list-btn"><a href="#">SERVICE</a></li>
+                <li class="navbar-list-btn"><a href="#"><i class="fas fa-bars fa-lg"></a></i></li>
             </ul>
-        </div>
-        <div class="hamburger"></div>
+        </div>     
     </nav>
 
     <!-- mainvisual -->
     <section id="main-visual">
         <!-- 슬라이드 구현하기 -->
-        <ul>
+        <ul class="main-visual-list">
             <li>
-                <h1>2021 MIRAI</h1>
-                <div class="buttons">
+                <div class="main-visual-img"></div>
+                <h1 class="main-visual-title">2021 MIRAI</h1>
+                <div class="main-visual-btn">
                     <button>시승신청하기</button>
                     <button>자세히 알아보기</button>
                 </div>
             </li>
-
             <li>
-                <h1>AVALON</h1>
-                <div class="buttons">
+                <div class="main-visual-img"></div>
+                <h1 class="main-visual-title">AVALON</h1>
+                <div class="main-visual-btn">
                     <button>시승신청하기</button>
                     <button>자세히 알아보기</button>
                 </div>
             </li>
-
             <li>
-                <h1>HIGHLANDER</h1>
-                <div class="buttons">
+                <h1 class="main-visual-title">HIGHLANDER</h1>
+                <div class="main-visual-img"></div>
+                <div class="main-visual-btn">
                     <button>시승신청하기</button>
                     <button>자세히 알아보기</button>
                 </div>
             </li>
         </ul>
     </section>
-
 
     <!-- models -->
     <section id="toyota-models">
@@ -256,40 +257,32 @@
         <h2>BRAND STORY</h2>
         <!--Hey! This is the original version
 of Simple CSS Waves-->
-
-<div class="header">
-
-    <!--Content before waves-->
-    <div class="inner-header flex">
-    <h1>EDGE For FUN FUTURE</h1>
-    </div>
-    <h2>Emotional Distinctive Genius Enjoyable </h2>
-    
-    <!--Waves Container-->
-    <div>
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-    <defs>
-    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-    </defs>
-    <g class="parallax">
-    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-    </g>
-    </svg>
-    </div>
-    <!--Waves end-->
-    
-    </div>
-    <!--Header ends-->
-    
-    <!--Content starts-->
-    <!-- <div class="content flex">
-    <p>Daniel Österman | 2019 | Free to use</p>
-    </div> -->
-    <!--Content ends-->
+        <div class="header">
+            <!--Content before waves-->
+            <div class="inner-header flex">
+                <h1>EDGE For FUN FUTURE</h1>
+            </div>
+            <h2>Emotional Distinctive Genius Enjoyable </h2>
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+        </div>
+        <!--Header ends-->
+        <!--Content ends-->
 
         <div class="brandstory-description">
             <div>
@@ -349,7 +342,7 @@ of Simple CSS Waves-->
         <div class="sns">
             <a href="#"><img src="./img/common/facebook.png" alt="facebook"></a>
             <a href="#"><img src="./img/common/youtube.png" alt="youtube"></a>
-            <a href="#"><img src="./img/common/instagram.png"alt="instargram"></a>
+            <a href="#"><img src="./img/common/instagram.png" alt="instargram"></a>
         </div>
     </footer>
 </body>
