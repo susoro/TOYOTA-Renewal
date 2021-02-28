@@ -9,6 +9,7 @@
     <meta name="author" content="jenn">
     <link rel="icon" href="./img/favi.png" type="image/png">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="./js/common.js"></script>
     <script src="https://kit.fontawesome.com/2ee0bcaaa9.js" crossorigin="anonymous"></script>
     <title>TOYOTA</title>
 </head>
@@ -16,48 +17,61 @@
 <body>
     <!-- gnb -->
     <nav id="navbar">
-        <div class="navbar-logo"><a href="./toyota.html"><img src="./img/common/toyota-logo.png" alt="toyota"></a></div>
-        <div class="navbar-gnb">
-            <ul class="navbar-gnb-list">
-                <li class="navbar-list-btn"><a href="#">MODELS</a></li>
-                <li class="navbar-list-btn"><a href="#">DEALERS</a></li>
-                <li class="navbar-list-btn"><a href="#">TOYOTA</a></li>
-                <li class="navbar-list-btn"><a href="#">EVENT</a></li>
-                <li class="navbar-list-btn"><a href="#">SERVICE</a></li>
-                <li class="navbar-list-btn"><a href="#"><i class="fas fa-bars fa-lg"></a></i></li>
-            </ul>
-        </div>     
+        <div class="navbar-list">
+            <div class="navbar-logo"><a href="./toyota.html"><img src="./img/common/toyota-logo.png" alt="toyota"></a>
+            </div>
+            <div class="navbar-gnb">
+                <ul class="navbar-gnb-list">
+                    <li class="navbar-list-btn navbar-remove"><a href="#">MODELS</a></li>
+                    <li class="navbar-list-btn navbar-remove"><a href="#">DEALERS</a></li>
+                    <li class="navbar-list-btn navbar-remove"><a href="#">TOYOTA</a></li>
+                    <li class="navbar-list-btn navbar-remove"><a href="#">EVENT</a></li>
+                    <li class="navbar-list-btn navbar-remove"><a href="#">SERVICE</a></li>
+                    <li class="navbar-list-btn"><a href="#"><i class="fas fa-bars fa-lg"></a></i></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- mainvisual -->
     <section id="main-visual">
         <!-- 슬라이드 구현하기 -->
-        <ul class="main-visual-list">
-            <li>
-                <div class="main-visual-img"></div>
-                <h1 class="main-visual-title">2021 MIRAI</h1>
-                <div class="main-visual-btn">
-                    <button>시승신청하기</button>
-                    <button>자세히 알아보기</button>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">
+                    <div><a href="#">시승신청하기</a></div>
+                    <div><a href="#">자세히알아보기</a></div>
                 </div>
-            </li>
-            <li>
-                <div class="main-visual-img"></div>
-                <h1 class="main-visual-title">AVALON</h1>
-                <div class="main-visual-btn">
-                    <button>시승신청하기</button>
-                    <button>자세히 알아보기</button>
+                <img src="./img/main/main-visual03.jpg" style="width:100%";>
+                <div class="text">2021 MIRAI</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">
+                    <div><a href="#">시승신청하기</a></div>
+                    <div><a href="#">자세히알아보기</a></div>
                 </div>
-            </li>
-            <li>
-                <h1 class="main-visual-title">HIGHLANDER</h1>
-                <div class="main-visual-img"></div>
-                <div class="main-visual-btn">
-                    <button>시승신청하기</button>
-                    <button>자세히 알아보기</button>
+                <img src="./img/main/main-visual01.png" style="width:100%";>
+                <div class="text">AVALON</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">
+                    <div><a href="#">시승신청하기</a></div>
+                    <div><a href="#">자세히알아보기</a></div>
                 </div>
-            </li>
-        </ul>
+                <img src="./img/main/main-visual02.jpg" style="width:100%";>
+                <div class="text">HIGHLANDER</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </section>
 
     <!-- models -->
@@ -345,6 +359,32 @@ of Simple CSS Waves-->
             <a href="#"><img src="./img/common/instagram.png" alt="instargram"></a>
         </div>
     </footer>
+
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 8000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>
