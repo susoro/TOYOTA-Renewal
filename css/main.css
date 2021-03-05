@@ -1,14 +1,59 @@
 @charset "utf-8";
 @import "./reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* root ,size definition */
 :root {
     /* color */
     --color-dark: #000;
     --color-light: #fff;
     --color-red: #eb0a1e;
     /* font */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-medium: 500;
+    --weight-regualr: 400;
+    --weight-light: 300;
+    /* font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-micro: 14px;
+    /* annimation */
+    --animation-duration: 300ms;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    margin: 16px 0;
+    color: var(--color-dark);
+    font-weight: var(--weight-bold);
+    font-size: var(--font-large);
+}
+h2 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-dark);
+    margin: 8px 0;
+}
+h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regualr);
+    color: var(--color-dark);
+    margin: 8px 0;
+}
+p {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regualr);
+    color: var(--color-dark);
+    margin: 4px 0;
 }
 
+/* navbar start */
+#navbar {margin: 30px 30px; display: flex; justify-content: space-between; align-items: center; }
+.navbar-gnb-list{display: flex;  font-size: var(--font-regular);
+font-weight: var(--weight-regualr);}
+.navbar-gnb-list a{ margin: 0 20px;}
 
 
 
@@ -16,49 +61,181 @@
 
 
 
-/*brand story start  */
-.header {position: relative;text-align: center;background: linear-gradient(60deg, rgba(0, 78, 161, 1) 0%, rgb(0, 100, 193) 100%);color: white;}
-.logo {width: 50px;fill: white;padding-right: 15px;display: inline-block;
-vertical-align: middle;}
-.inner-header {height: 65vh;width: 100%;margin: 0;padding: 0;}
 
-.flex {/*Flexbox for containers*/
-display: flex;justify-content: center;align-items: center;text-align: center;}
 
-.waves {position: relative;width: 100%;height: 15vh;margin-bottom: -7px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*brand story start 애니메이션 건들지마라!!! */
+.header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgba(0, 78, 161, 1) 0%, rgb(0, 100, 193) 100%);
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    fill: white;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inner-header {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
     /*Fix for safari gap*/
-    min-height: 100px;max-height: 150px;}
+    min-height: 100px;
+    max-height: 150px;
+}
 
-.content {position: relative;height: 20vh;text-align: center;background-color: white;}
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
 /* Animation */
-.parallax>use {animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;}
-.parallax>use:nth-child(1) {animation-delay: -2s;animation-duration: 7s;}
-.parallax>use:nth-child(2) {animation-delay: -3s;animation-duration: 10s;}
-.parallax>use:nth-child(3) {animation-delay: -4s;animation-duration: 13s;}
-.parallax>use:nth-child(4) {animation-delay: -5s;animation-duration: 20s;}
-@keyframes move-forever {0% {
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
         transform: translate3d(-90px, 0, 0);
-    }100% {transform: translate3d(85px, 0, 0);}}
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
 /*Shrinking for mobile brnadstory */
 @media (max-width: 768px) {
     .waves {
         height: 40px;
-        min-height: 40px;}
+        min-height: 40px;
+    }
+
     .content {
-        height: 30vh;}
+        height: 30vh;
+    }
+
     h1 {
-        font-size: 38px;}
+        font-size: 38px;
+    }
 }
+
 /* navbar mobile */
 @media screen and (max-width:768px) {
     #navbar {
         flex-direction: column;
-        align-items: flex-start;}
-    .navbar-remove{
-        display: none;}
+        align-items: flex-start;
+    }
+
+    .navbar-remove {
+        display: none;
+    }
 }
+
 /* Fading animation */
-.fade {-webkit-animation-name: fade;-webkit-animation-duration: 1.5s;
-animation-name: fade;animation-duration: 1.5s;}
-@-webkit-keyframes fade {from {opacity: .4}to {opacity: 1}}
-@keyframes fade {from {opacity: .4}to {opacity: 1}}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
