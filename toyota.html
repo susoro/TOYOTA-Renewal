@@ -18,22 +18,21 @@
     <div id="wrap">
         <!-- gnb -->
         <header id="navbar">
-            
+
             <div class="navbar-logo"><a href="./toyota.html"><img src="./img/common/toyota-logo.png" alt="toyota"></a>
             </div>
-                <ul class="navbar-gnb-list">
-                    <li class="navbar-list navbar-remove"><a href="#">MODELS</a></li>
-                    <li class="navbar-list navbar-remove"><a href="#">DEALERS</a></li>
-                    <li class="navbar-list navbar-remove"><a href="#">TOYOTA</a></li>
-                    <li class="navbar-list navbar-remove"><a href="#">EVENT</a></li>
-                    <li class="navbar-list navbar-remove"><a href="#">SERVICE</a></li>
-                </ul>
-                <div class="navbar-list-btn"><a href="#"><i class="fas fa-bars fa-lg"></a></i></div>
+            <ul class="navbar-gnb-list">
+                <li class="navbar-list navbar-remove"><a href="#">MODELS</a></li>
+                <li class="navbar-list navbar-remove"><a href="#">DEALERS</a></li>
+                <li class="navbar-list navbar-remove"><a href="#">TOYOTA</a></li>
+                <li class="navbar-list navbar-remove"><a href="#">EVENT</a></li>
+                <li class="navbar-list navbar-remove"><a href="#">SERVICE</a></li>
+            </ul>
+            <div class="navbar-list-btn"><a href="#"><i class="fas fa-bars fa-lg"></a></i></div>
         </header>
 
-        <!-- mainvisual -->
+
         <section id="main-visual">
-            <!-- 슬라이드 구현하기 -->
             <ul class="mainvisual-container mv">
                 <li class="mainvisual-container-list mv1">
                     <div class="text1">2021 MIRAI</div>
@@ -45,7 +44,7 @@
                     <div class="text-line"></div>
                 </li>
 
-                <li class="mainvisual-container-list mv2">
+                <!-- <li class="mainvisual-container-list mv2">
                     <div class="text">AVALON</div>
                     <div class="numbertext">
                         <div><a href="#">시승신청하기</a></div>
@@ -63,20 +62,13 @@
                     </div>
 
                     <div class="text-line"></div>
-                </li>
+                </li> -->
 
             </ul>
             <br>
-
-            <!-- 슬라이더 잠시 보류 -->
-            <!-- <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div> -->
         </section>
+        <!-- //mainvisual -->
 
-        <!-- models -->
         <section id="toyota-models">
             <div class="models-menu">
                 <h2>TOYOTA MODELS</h2>
@@ -85,8 +77,8 @@
                         <a href="#">
                             <div class="product-models">
                                 <figure>
-                                    <img src="./img/main/mirai-side.png" alt="2021-mirai">
-                                    <figcaption itemprop="model-description">2021 Mirai</figcaption>
+                                    <figcaption itemprop="model-description">2021 MIRAI</figcaption>
+                                    <img src="./img/main/2021 MIRAI-side.png" alt="2021 MIRAI">
                                 </figure>
                             </div>
                         </a>
@@ -95,8 +87,8 @@
                         <a href="#">
                             <div class="product-models">
                                 <figure>
-                                    <img src="./img/main/avalonhybrid-side.png" alt="avalonhybrid">
                                     <figcaption itemprop="model-description">Avalon</figcaption>
+                                    <img src="./img/main/avalonhybrid-side.png" alt="avalonhybrid">
                                 </figure>
                             </div>
                         </a>
@@ -106,8 +98,8 @@
                         <a href="#">
                             <div class="product-models">
                                 <figure>
-                                    <img src="./img/main/highlanderhybrid-side.png" alt="highlander">
                                     <figcaption itemprop="model-description">Highlander</figcaption>
+                                    <img src="./img/main/highlander-side.png" alt="highlander">
                                 </figure>
                             </div>
                         </a>
@@ -117,8 +109,8 @@
                         <a href="#">
                             <div class="product-models">
                                 <figure>
-                                    <img src="./img/main/camry-side.png" alt="camry">
                                     <figcaption itemprop="model-description">Camry</figcaption>
+                                    <img src="./img/main/camry-side.png" alt="camry">
                                 </figure>
                             </div>
                         </a>
@@ -363,30 +355,7 @@ of Simple CSS Waves-->
         </footer>
 
 
-        <!-- 
-    <script>
-        var slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 8000); // Change image every 2 seconds
-        }
-    </script> -->
     </div>
 </body>
 
