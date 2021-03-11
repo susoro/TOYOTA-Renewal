@@ -93,17 +93,28 @@ font-weight: var(--weight-regualr);}
 
 
 #toyota-models{margin-top:95px; width: 100%;}
-#toyota-models .models-menu h2{ padding-bottom: 84px; position: relative; left:130px;}
+#toyota-models .models-menu h2{ padding-bottom: 84px; position: relative; left:130px;letter-spacing: -1px;}
 #toyota-models .models-nav-menu{display: flex; cursor: pointer; justify-content: space-around;} 
-#toyota-models .models-nav-menu li{font-size: var(--font-medium); font-weight: 700; color:rgb(100, 100, 100,0.3);}
+#toyota-models .models-nav-menu li{font-size: var(--font-medium); font-weight: 700; color:rgb(100, 100, 100,0.3);letter-spacing: -1px;}
 #toyota-models .models-nav-menu li:first-child{color:var(--color-dark);}
-#toyota-models .product-models figure{text-align: center; margin-bottom: 8px;}
+#toyota-models .product-models figure{text-align: center; margin-bottom: 15px;}
 #toyota-models .models-left{margin-top: 65px;}
 
 
+.description{display: flex; justify-content:center; position: relative; margin-bottom: 92px;}
+.description-title{position: absolute; left: 80px; top: 280px;}
+.description-title h3{color: #fff; font-weight:700; font-size:28px; letter-spacing: -1px;}
+.description-title p{color: #fff; font-size: 22px; letter-spacing: -1px;}
+.description-01{display: flex; align-items: center; justify-content: space-between;}
+.description-02{margin-top:115px; display: flex;align-items: center; justify-content: space-between;}
+.description-03{margin-top:115px; display: flex;align-items: center; justify-content: space-between;}
+.description-left ,.description-right{font-size: 26px;}
+.description-left p{padding-bottom: 15px;}
 
-
-
+#customise{margin-top:108px;}
+#customise .customise-lists-wrap{display: flex; justify-content: space-between;}
+#customise .customise-lists{margin-top: 20px; font-size: 22px; letter-spacing: -1px;}
+#customise .customise-lists li{margin-bottom:14px;}
 
 
 
