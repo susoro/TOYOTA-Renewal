@@ -12,6 +12,7 @@ body {
     font-family:"Gotham Book",'Noto Sans KR', sans-serif;      
 	line-height: 1;
 	overflow-x: hidden;
+	letter-spacing:0;
 }
 
 ol, ul {
