@@ -196,8 +196,10 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 .event-box-lists div{ color:var(--color-light);}
 
 
-
-
+.footer-inner{position: relative;text-align: center; display: flex;
+justify-content: space-around;}
+.footer-inner-desc p{color: var(--color-light);}
+.sns a{margin:0 5px;}
 
 
 
