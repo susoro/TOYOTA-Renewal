@@ -100,7 +100,23 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 #toyota-models .models-nav-menu li:first-child{color:var(--color-dark);}
 #toyota-models .product-models figure{text-align: center; margin-bottom: 15px;}
 #toyota-models .models-left{ margin:65px 60px 0 60px;}
-
+/* models tablet start */
+@media screen and (max-width: 768px) {
+    :root{
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-micro: 14px;
+    }
+    .models-nav-menu{
+        flex-direction: column;
+    }
+/* Mobile */
+@media all and (max-width : 767px) {
+    .models-nav-menu{
+        flex-direction: column;
+    }
+}
 
 /*2021 mirai desc*/
 .description{display: flex; justify-content:center; position: relative; margin-bottom: 92px;}
@@ -113,7 +129,7 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 .description-left,.description-right{font-size: 26px;}
 .description-left p{padding-bottom: 15px;}
 
-/* description start */
+/* description tablet start */
 @media screen and (max-width: 768px) {
     :root{
         --font-large: 30px;
@@ -148,14 +164,43 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 #customise .customise-wrap{margin-top:100px;}
 #customise .customise-lists-wrap{display:flex; align-items:unset; justify-content:space-between; }
 #customise .customise-lists{font-size: 22px;}
-#customise .customise-lists li{margin-bottom:14px;}
+#customise .customise-lists li{margin-bottom:14px; color: var(--color-gray);}
+#customise .customise-lists li:hover{color: var(--color-semidark);}
+#customise .customise-lists li:active{color: var(--color-dark);}
 #customise .customise-description{display: flex; align-items:unset; position: relative;}
 #customise .customise-price{margin-right: 50px;}
 #customise .customise-price span{font-size: var(--font-semilarge); }
 #customise .customise-price::after{background: rgb(100, 100, 100); height: 50px; width:1px; content: ""; position: absolute; top: 0; left: 65%;}
 #customise .customise-MPGe span{font-size: var(--font-semilarge); }
 #customise.customise-icon{background-color: bisque;}
-
+/* customise tablet start */
+@media screen and (max-width: 768px) {
+    :root{
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-micro: 14px;
+    }
+    .customise-lists-wrap{flex-direction: column; text-align: center;}
+    .customise-description{margin-top: 30px; justify-content: center;}
+    #customise .customise-price::after{background: rgb(100, 100, 100); height: 50px; width:1px; content: ""; position: absolute; top: 0; left: 58%;}
+    }
+/* Mobile */
+@media all and (max-width : 767px) {
+    .description-01 ,.description-03 {margin-top:40px;}
+    .description-left span{font-size: 30px; font-weight:700;}
+    .description-left p {
+        margin-top: 25px;
+    }
+    .description-right span {font-size: 30px;}
+    .description-right{
+        font-size: 30px; font-weight:700;padding-top:40px;
+    }
+    .description-right p{
+        margin-top: 25px;
+        
+    }
+}
 
 
 
