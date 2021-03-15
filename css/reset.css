@@ -13,7 +13,7 @@ body {
 	font-family:'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
 	line-height: 1;
 	overflow-x: hidden;
-	letter-spacing:0;
+	letter-spacing:-1px;
 }
 
 ol, ul {
@@ -34,6 +34,7 @@ table {
 input:focus{
 	outline:none;
 }
+input{border: 0 none;}
 a{
 	color: inherit;
 	text-decoration: none;
