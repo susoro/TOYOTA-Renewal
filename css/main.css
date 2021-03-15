@@ -93,13 +93,13 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 
 
 /* TOYOTA MODELS */
-#toyota-models{margin-top:95px; width: 100%;}
-#toyota-models .models-menu h2{ padding-bottom: 84px; position: relative; left:130px;letter-spacing: -1px;}
+#toyota-models{margin:95px 60px 0 60px; }
+#toyota-models .models-menu h2{ padding-bottom: 84px; position: relative; left:130px;letter-spacing: -1px; margin:95px 60px 0 60px;}
 #toyota-models .models-nav-menu{display: flex; cursor: pointer; justify-content: space-around;} 
 #toyota-models .models-nav-menu li{font-size: var(--font-medium); font-weight: 700; color:rgb(100, 100, 100,0.3);letter-spacing: -1px;}
 #toyota-models .models-nav-menu li:first-child{color:var(--color-dark);}
 #toyota-models .product-models figure{text-align: center; margin-bottom: 15px;}
-#toyota-models .models-left{margin-top: 65px;}
+#toyota-models .models-left{ margin:65px 60px 0 60px;}
 
 
 /*2021 mirai desc*/
@@ -116,7 +116,7 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 
 
 
-#customise{margin-top:108px;}
+#customise{margin:104px 60px 0 60px;}
 #customise .customise-lists-wrap{display: flex; justify-content: space-between;}
 #customise .customise-lists{margin-top: 20px; font-size: 22px;}
 #customise .customise-lists li{margin-bottom:14px;}
@@ -162,7 +162,7 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 
 
 /* brand stroy start */
-.brandstory-description{display: flex; justify-content: space-between; margin-top: 64px; align-items: center;}
+.brandstory-description{display: flex; justify-content: space-between; margin:64px 60px 0 60px;  align-items: center;}
 /* brandstory start */
 @media screen and (max-width: 768px) {
     :root{
@@ -187,18 +187,34 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 
 
 #event-footer-wrap{
+    position: relative;
     margin-top:150px;
     justify-content:center;
-    height:1024px;
+    height:900px;
     background: url('../img/main/footer-bg.jpg')no-repeat center center fixed;
 }
-.event-box-lists{display: flex; justify-content: space-between; text-align: center;}
+.event-service{flex-wrap: wrap;}
+.event-box{display:flex; justify-content: center;}
+.event-box-lists{
+position:absolute; top: 223px;  display: flex; justify-content: space-between; text-align: center;}
+.event-box-lists li{padding-left: 55px;}
 .event-box-lists div{ color:var(--color-light);}
+.event-desc{position:relative; top:-170px;}
+/* later hidden ㅁㅐ기기 */
 
 
-.footer-inner{position: relative;text-align: center; display: flex;
-justify-content: space-around;}
-.footer-inner-desc p{color: var(--color-light);}
+
+/* form start */
+.form-layout{position: relative; top: 100px;}
+
+
+
+
+/* footer start */
+#footer{position: relative;}
+.footer-inner{text-align: center; display: flex; align-items: center;
+justify-content: space-around; position: absolute; top: 750px; left: 220px;}
+.footer-inner-desc p{color: var(--color-gray);}
 .sns a{margin:0 5px;}
 
 
