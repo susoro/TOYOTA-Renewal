@@ -10,7 +10,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     /* font-family:"Gotham Book",'Noto Sans KR', sans-serif;       */
-	font-family:'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+	font-family:"Gotham Book",'Noto Sans KR', sans-serif;
 	line-height: 1;
 	overflow-x: hidden;
 	letter-spacing:-1px;
