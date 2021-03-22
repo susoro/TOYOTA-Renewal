@@ -9,7 +9,10 @@
     <meta name="author" content="jenn">
     <link rel="icon" href="./img/favi.png" type="image/png">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/common.js"></script>
+
     <script src="https://kit.fontawesome.com/2ee0bcaaa9.js" crossorigin="anonymous"></script>
     <title>TOYOTA</title>
 </head>
@@ -18,7 +21,6 @@
     <div id="wrap">
         <!-- gnb -->
         <header id="navbar">
-
             <div class="navbar-logo"><a href="./toyota.html"><img src="./img/common/toyota-logo.png" alt="toyota"></a>
             </div>
             <ul class="navbar-gnb-list">
@@ -33,46 +35,55 @@
 
 
         <section id="main-visual">
-            <ul class="mainvisual-container mv">
-                <li class="mainvisual-container-list mv1">
-                    <div class="text1">2021 MIRAI</div>
-                    <div class="numbertext1">
-                        <div><a href="#">시승신청하기</a></div>
-                        <div><a href="#">자세히알아보기</a></div>
+            <div class="mainvisual-container">
+                <div class="mainvisual-container-list slideList">
+                    <div class="slideImg">
+                        <img src="./img/main/main-visual03.png" alt="AVALON">
+                        <div class="text-desc">
+                            <div class="text">AVALON</div>
+                            <div class="text-line"></div>
+                            <div class="numbertext">
+                                <div class="numbertext-space"><a href="#">시승신청하기</a></div>
+                                <div><a href="#">자세히알아보기</a></div>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="text-line"></div>
-                </li>
-
-                <!-- <li class="mainvisual-container-list mv2">
-                    <div class="text">AVALON</div>
-                    <div class="numbertext">
-                        <div><a href="#">시승신청하기</a></div>
-                        <div><a href="#">자세히알아보기</a></div>
+                <div class="mainvisual-container-list slideList">
+                    <div class="slideImg">
+                        <img src="./img/main/main-visual02.png" alt="Highlander">
+                        <div class="text-desc-2">
+                            <div class="text">Highlander</div>
+                            <div class="text-line-2"></div>
+                            <div class="numbertext-2">
+                                <div class="numbertext-space"><a href="#">시승신청하기</a></div>
+                                <div><a href="#">자세히알아보기</a></div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="text-line"></div>
-                </li>
-
-                <li class="mainvisual-container-list mv3">
-                    <div class="text">HIGHLANDER</div>
-                    <div class="numbertext">
-                        <div><a href="#">시승신청하기</a></div>
-                        <div><a href="#">자세히알아보기</a></div>
+                </div>
+                <div class="mainvisual-container-list slideList">
+                    <div class="slideImg">
+                        <img src="./img/main/main-visual01.png" alt="2021 MIRAI">
+                        <div class="text-desc-3">
+                            <div class="text">2021 MIRAI</div>
+                            <div class="text-line-3"></div>
+                            <div class="numbertext-3">
+                                <div class="numbertext-space"><a href="#">시승신청하기</a></div>
+                                <div><a href="#">자세히알아보기</a></div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="text-line"></div>
-                </li> -->
-
-            </ul>
-            <br>
+                </div>
+            </div>
         </section>
         <!-- //mainvisual -->
 
         <section id="toyota-models">
             <div class="models-menu">
                 <h2>TOYOTA MODELS</h2>
-                <ul class="models-nav-menu">
+                <ul class="models-nav-menu slideList">
                     <li>
                         <a href="#">
                             <div class="product-models">
@@ -195,12 +206,23 @@
             <h2>CUSTOMISE</h2>
             <div class="customise-wrap">
                 <div class="customise-lists-wrap">
+                    <div class="customise-list-line"></div>
                     <ul class="customise-lists">
                         <li><a href="#">2021 MIRAI</a></li>
                         <li><a href="#">HIGHLANDER</a></li>
                         <li><a href="#">AVALON</a></li>
                         <li><a href="#">CAMARY</a></li>
                     </ul>
+
+                    <div class="customise-carimg">
+                        <ul>
+                            <li><a href="#"><img src="./img/main/custom-bk.png" alt="2021 MIRAI"></a></li>
+                            <!-- <li><a href="#"><img src="./img/main/custom-blue.png" alt="2021 MIRAI"></a></li>
+                            <li><a href="#"><img src="./img/main/custom-red.png" alt="2021 MIRAI"></a></li>
+                            <li><a href="#"><img src="./img/main/custom-grey.png" alt="2021 MIRAI"></a></li> -->
+                        </ul>
+                    </div>
+
                     <div class="customise-description">
                         <div class="customise-price">
                             <span>47,020,000원</span><br>
@@ -212,33 +234,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="customise-carimg">
-                    <ul>
-                        <li><a href="#"><img src="./img/main/custom-bk.png" alt="2021 MIRAI"></a></li>
-                        <li><a href="#"><img src="./img/main/custom-blue.png" alt="2021 MIRAI"></a></li>
-                        <li><a href="#"><img src="./img/main/custom-red.png" alt="2021 MIRAI"></a></li>
-                        <li><a href="#"><img src="./img/main/custom-white.png" alt="2021 MIRAI"></a></li>
-                        <li><a href="#"><img src="./img/main/custom-grey.png" alt="2021 MIRAI"></a></li>
-                    </ul>
-                </div>
+
                 <div class="customise-color">
-                    <button>color1</button>
-                    <button>color2</button>
-                    <button>color3</button>
-                    <button>color4</button>
+                    <a href="#" class="black">color1</a>
+                    <a href="#" class="red">color2</a>
+                    <a href="#" class="blue">color3</a>
+                    <a href="#" class="grey">color4</a>
                 </div>
-                <div class="customise-icon">
-                    <ul>
-                        <li><a href="#"><img src="./img/common/icon-01.png" alt="icon">브로셔 다운로드</a></li>
-                        <li><a href="#"><img src="./img/common/icon-02.png" alt="icon">내 토요타만들기</a></li>
-                        <li><a href="#"><img src="./img/common/icon-03.png" alt="icon">전시장 찾기</a></li>
-                        <li><a href="#"><img src="./img/common/icon-04.png" alt="icon">시승 신청하기</a></li>
-                    </ul>
-                </div>
+
+                <ul class="customise-icon">
+                    <li><img src="./img/main/custom-bg1.png" alt="icon">
+                        <a href="#">브로셔 다운로드</a>
+                    </li>
+                    <li><img src="./img/main/custom-bg2.png" alt="icon"><a href="#">내 토요타만들기</a></li>
+                    <li><img src="./img/main/custom-bg3.png" alt="icon"><a href="#">전시장 찾기</a></li>
+                    <li><img src="./img/main/custom-bg4.png" alt="icon"><a href="#">시승 신청하기</a></li>
+                </ul>
+
             </div>
         </section>
 
-        <section id="brandstory">
+        <section id="brandstory" class="clearfix">
             <video muted autoplay loop>
                 <source src="./video/toyota-brand.mp4">
             </video>
@@ -318,6 +334,7 @@
         </div>
 
     </div>
+
 </body>
 
 </html>

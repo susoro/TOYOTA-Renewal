@@ -1,0 +1,4 @@
+
+        $(".slideImg").bxSlider({
+            auto: true
+        });

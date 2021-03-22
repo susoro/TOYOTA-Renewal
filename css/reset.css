@@ -3,16 +3,18 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.clearfix::after, .clearfix::before{
+	content: ""; clear: both; display: block;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    /* font-family:"Gotham Book",'Noto Sans KR', sans-serif;       */
 	font-family:"Gotham Book",'Noto Sans KR', sans-serif;
 	line-height: 1;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	letter-spacing:-1px;
 }
 
