@@ -21,6 +21,7 @@
     --animation-duration: 300ms;
 }
 * {
+    scroll-behavior: smooth;
 }
 h1 {
     margin: 16px 0;
