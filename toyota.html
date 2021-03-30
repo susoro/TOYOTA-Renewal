@@ -12,7 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/common.js"></script>
-
     <script src="https://kit.fontawesome.com/2ee0bcaaa9.js" crossorigin="anonymous"></script>
     <title>TOYOTA</title>
 </head>
@@ -30,7 +29,7 @@
                 <li class="navbar-list navbar-remove"><a href="#">EVENT</a></li>
                 <li class="navbar-list navbar-remove"><a href="#">SERVICE</a></li>
             </ul>
-            <div class="navbar-list-btn"><a href="#"><i class="fas fa-bars fa-lg"></a></i></div>
+            <div class="navbar-list-btn toggle" onclick="toggleMenu();"><a href="#"><i class="fas fa-bars fa-lg"></a></i></div>
         </header>
 
 
@@ -79,6 +78,20 @@
             </div>
         </section>
         <!-- //mainvisual -->
+
+
+        <!-- sidebar -->
+        
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="#models" onclick="toggleMenu();">Models</a></li>
+                <li><a href="#dealers" onclick="toggleMenu();">Dealers</a></li>
+                <li><a href="#toyota" onclick="toggleMenu();">Toyota</a></li>
+                <li><a href="#event" onclick="toggleMenu();">Event</a></li>
+                <li><a href="#service" onclick="toggleMenu();">Service</a></li>
+            </ul>
+        </div>
+
 
         <section id="toyota-models">
             <div class="models-menu">
@@ -132,11 +145,10 @@
             <div class="models-side-wrap">
                 <div class="models-left">
                     <ul class="models-left-lists">
-                        <li><img src="./img/main/2021 MIRAI -left.png" alt="2021 MIRAI"></li>
-                        <!--
+                        <li><img src="./img/main/2021 MIRAI -left.png" alt="2021 MIRAI"></li>                        
                         <li><img src="./img/main/AVALON-left.png" alt="Avalon"></li>
                         <li><img src="./img/main/HIGHLANDER-left.png" alt="highlander"></li>
-                        <li><img src="./img/main/CAMARY-left.png" alt="2021 MIRAI"></li> -->
+                        <li><img src="./img/main/CAMARY-left.png" alt="2021 MIRAI"></li>
                     </ul>
                 </div>
                 <div class="models-right">
@@ -214,12 +226,15 @@
                         <li><a href="#">CAMARY</a></li>
                     </ul>
 
-                    <div class="customise-carimg">
+                    <div class="customise-carimg selected">
                         <ul>
-                            <li><a href="#"><img src="./img/main/custom-bk.png" alt="2021 MIRAI"></a></li>
-                            <!-- <li><a href="#"><img src="./img/main/custom-blue.png" alt="2021 MIRAI"></a></li>
-                            <li><a href="#"><img src="./img/main/custom-red.png" alt="2021 MIRAI"></a></li>
-                            <li><a href="#"><img src="./img/main/custom-grey.png" alt="2021 MIRAI"></a></li> -->
+                            <li class="one" ><a href="#"><img class="one active src="./img/main/custom-bk.png" alt="2021 MIRAI"></a></li>
+
+                            <li class="two"><a href="#"><img class="two" src="./img/main/custom-blue.png" alt="2021 MIRAI"></a></li>
+
+                            <li class="three" ><a href="#"><img class="three" src="./img/main/custom-red.png" alt="2021 MIRAI"></a></li>
+
+                            <li class="four"><a href="#"><img class="four" src="./img/main/custom-grey.png" alt="2021 MIRAI"></a></li>
                         </ul>
                     </div>
 

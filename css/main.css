@@ -3,6 +3,27 @@
 @import "./component.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 /* root ,size definition */
+.toggle{
+    position: fixed;
+    top: 26px;
+    right:30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:#D3AFD0 url('../img/menu.png')no-repeat center;
+    background-size: 30px;
+    cursor:pointer;
+    z-index: 1000;
+}
+.toggle.active{
+    border-radius: 50%;
+    background:#D3AFD0 url('../img/close.png')no-repeat center;
+    background-size: 30px;
+    cursor:pointer;
+}
+
+
+
 
 /* navbar start */
 #navbar {width:100%; position:absolute; top: 10px; left:0; z-index: 1; display: flex; justify-content: space-around; align-items: center;}
@@ -87,7 +108,7 @@ padding: 20px 0; position: relative; left: 210px;}
 #customise .customise-lists-wrap{display:flex; align-items:unset; justify-content:space-between; }
 #customise .customise-lists{font-size: 22px; margin-left: 100px;}
 #customise .customise-lists li{margin-bottom:14px; color: var(--color-gray);}
-#customise .customise-lists li:hover{color: var(--color-semidark);}
+#customise .customise-lists li:hover{color: var(--color-dark);}
 #customise .customise-lists li:active{color: var(--color-dark);}
 .customise-lists .on{font-weight: bold;}
 #customise .customise-description{display: flex; align-items:unset; position: relative;}
@@ -98,6 +119,7 @@ padding: 20px 0; position: relative; left: 210px;}
 #customise .customise-MPGe span{font-size: var(--font-semilarge); }
 #customise.customise-icon{background-color: bisque;}
 .customise-carimg img{position: relative; top:150px;}
+
 /* customise tablet start */
 .customise-color{text-align: center; position: relative; top: 250px; cursor: pointer;}
 .customise-color a{margin-left: 20px; display: inline-block;}
