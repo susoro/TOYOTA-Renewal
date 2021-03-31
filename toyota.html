@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favi.png" type="image/png">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/common.js"></script>
@@ -27,16 +27,15 @@
                 <li class="navbar-list navbar-remove"><a href="#">EVENT</a></li>
                 <li class="navbar-list navbar-remove"><a href="#">SERVICE</a></li>
             </ul>
-            <div class="navbar-list-btn toggle""><a href="#"><img src="" alt=""></div>
+            <div class="toggle" onclick="toggleMenu();"></div>
         </header>
 
 
         <section id="main_visual">
             <ul class="mv">
-
                 <li class="mv1">
                     <div class="txt">
-                        <h2 class="text">AVALON</h2>          
+                        <h2 class="text">AVALON</h2>
                         <div class="numbertext">
                             <div class="numbertext-space"><a href="#">시승신청하기</a></div>
                             <div><a href="#">자세히알아보기</a></div>
@@ -47,7 +46,7 @@
                 <li class="mv2">
                     <div class="txt">
                         <h2 class="text">Highlander</h2>
-                        <div class="numbertext-2">
+                        <div class="numbertext">
                             <div class="numbertext-space"><a href="#">시승신청하기</a></div>
                             <div><a href="#">자세히알아보기</a></div>
                         </div>
@@ -57,31 +56,14 @@
                 <li class="mv3">
                     <div class="txt">
                         <h2 class="text">2021 MIRAI</h2>
-                        <div class="numbertext-3">
+                        <div class="numbertext">
                             <div class="numbertext-space"><a href="#">시승신청하기</a></div>
                             <div><a href="#">자세히알아보기</a></div>
                         </div>
                     </div>
                 </li>
-
             </ul>
-            
         </section>
-        <!-- //mainvisual -->
-
-
-        <!-- sidebar -->
-
-        <div class="sidebar">
-            <ul class="menu">
-                <li><a href="#models" onclick="toggleMenu();">Models</a></li>
-                <li><a href="#dealers" onclick="toggleMenu();">Dealers</a></li>
-                <li><a href="#toyota" onclick="toggleMenu();">Toyota</a></li>
-                <li><a href="#event" onclick="toggleMenu();">Event</a></li>
-                <li><a href="#service" onclick="toggleMenu();">Service</a></li>
-            </ul>
-        </div>
-
 
         <section id="toyota-models">
             <div class="models-menu">
@@ -353,7 +335,17 @@
         </footer>
         </section>
 
-    </div> -->
+    </div>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Service</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </div>
 </body>
 
 </html>

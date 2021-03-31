@@ -11,14 +11,14 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background:#D3AFD0 url('../img/menu.png')no-repeat center;
+    background: url('../img/common/navbar.png')no-repeat center;
     background-size: 30px;
     cursor:pointer;
     z-index: 1000;
 }
-.toggle.active{
+.toggle .active{
     border-radius: 50%;
-    background:#D3AFD0 url('../img/close.png')no-repeat center;
+    background: url('../img/close.png')no-repeat center;
     background-size: 30px;
     cursor:pointer;
 }
@@ -40,21 +40,24 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 
 
 /* 제발좀 돌아가줄래? */
-#main_visual { height: 50vw; text-align: center; position: relative;  }
-
+#main_visual { height: 50vw; text-align: center; position: relative;}
 #main_visual .mv li { height: 50vw; }
-#main_visual .mv li.mv1 { background: url('../img/main/main-visual03.png') no-repeat center top; background-size: cover; }
-#main_visual .mv li.mv2 { background: url('../img/main/main-visual02.png') no-repeat center top; background-size: cover; }
-#main_visual .mv li.mv3 { background: url('../img/main/main-visual01.png') no-repeat center top; background-size: cover; }
+
+#main_visual .mv .mv1 { background: url('../img/main/main-visual03.png') no-repeat center top; background-size: cover; }
+#main_visual .mv .mv2 { background: url('../img/main/main-visual02.png') no-repeat center top; background-size: cover; }
+#main_visual .mv .mv3 { background: url('../img/main/main-visual01.png') no-repeat center top; background-size: cover; }
+
+
 
 #main_visual .txt { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); }
-#main_visual h2 {font-size: 6.25rem; }
+#main_visual h2 {font-size: 3.25rem; letter-spacing: -2;
+}
 #main_visual .numbertext { font-size: 0.875rem; line-height: 1.5; }
 
 #main_visual .bx-pager { position:absolute; bottom:10.416vw; left:50%; transform: translateX(-50%); }
 #main_visual .bx-pager-item { float:left; }
-#main_visual .bx-pager a {position: relative; top: 90px; background:#fff; font-size: 0; display:block; width:8px; height:8px; margin:0 5px; border-radius:5px; transition:all 0.2s; }
-#main_visual .bx-pager a.active { background:#e61115; position: relative; }
+#main_visual .bx-pager a {background:#fff; font-size: 0; display:block; width:8px; height:8px; margin:0 5px; border-radius:5px; transition:all 0.2s; }
+#main_visual .bx-pager a.active { background:#e61115; }
 #main_visual .bx-controls-direction a { position: absolute; top: 50%; margin-top: -20px; width: 40px; height: 40px;  text-indent: -9999px; }
 
 
@@ -65,7 +68,7 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
     #main_visual { height: 93.75vw; }
     #main_visual .mv li { height: 93.75vw; }
     #main_visual h2 { font-size: 9.765vw; }
-    #main_visual .bx-pager a {position: relative; top: 60px; background:#fff; font-size: 0; display:block; width:8px; height:8px; margin:0 5px; border-radius:5px; transition:all 0.2s; }
+    #main_visual .bx-pager a {position: relative; top: 60px; }
 }
 
 
@@ -75,7 +78,7 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
     #main_visual .mv li { height: 125vw; }
     #main_visual h2 { font-size: 13.02vw; }
     #main_visual .bx-controls-direction a { display: none; }
-    #main_visual .bx-pager a {position: relative; top: 20px; background:#fff; font-size: 0; display:block; width:8px; height:8px; margin:0 5px; border-radius:5px; transition:all 0.2s; }
+    #main_visual .bx-pager a {position: relative; top: 20px;}
 }
 
 
