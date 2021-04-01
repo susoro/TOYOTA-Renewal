@@ -149,7 +149,6 @@ position: relative; top:120px; }
         position: absolute;
         transform: translateX(100%);
         transition: 0.3s;
-        
 }
 #content1{
         transform: translateX(0px);}
@@ -258,11 +257,13 @@ padding: 10px 10px; justify-content: center; position: relative; top: 280px;}
 }
 /* Mobile */
 @media all and (max-width : 500px) {
-    .customise-carimg img{transform: scale(0.5);
+.customise-carimg img{transform: scale(0.5);
     position:relative; right: 25%;}
-    .customise-description{
-        position: relative; top: 180px;left: 20px;
+.customise-price{text-align: center;}
+.customise-description .customise-MPGe{
+        display: none;
     }
+#customise .customise-price::after{display: none;}
 }
 
 /* brand stroy start */
