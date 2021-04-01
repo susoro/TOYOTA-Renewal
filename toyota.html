@@ -25,8 +25,9 @@
                 <li class="navbar-list navbar-remove"><a href="#">TOYOTA</a></li>
                 <li class="navbar-list navbar-remove"><a href="#">EVENT</a></li>
                 <li class="navbar-list navbar-remove"><a href="#">SERVICE</a></li>
+                <li class="active"><a href="#"><img src="./img/common/navbar.png" alt=""></a></li>
             </ul>
-            <div class="toggle" onclick="toggleMenu();"></div>
+            <div class="toggle"></div>
         </header>
 
 
@@ -82,37 +83,31 @@
                         <button id="btn3" onclick="openHighlander()">Highlander<br><img
                                 src="./img/main/highlander-side.png" alt="Highlander"></button>
 
-                        <button id="btn4" onclick="openCamary()">Camary<br><img src="./img/main/camry-side.png"
-                                alt="Camary"></button>
+                        <!-- <button id="btn4" onclick="openCamary()">Camary<br><img src="./img/main/camry-side.png"
+                                alt="Camary"></button> -->
                     </div>
 
 
 
-                    <div id="content1" >
-                        <img src="./img/main/2021 MIRAI -left.png" alt="">
+                    <div id="content1" class="models-content">
+                        <img src="./img/main/2021 MIRAI -left.png" alt="MIRAI">
                     </div>
 
-
-                    <div id="content2" >
-                        <img src="./img/main/AVALON-left.png" alt="">
+                    <div id="content2" class="models-content">
+                        <img src="./img/main/AVALON-left.png" alt="AVALON">
                     </div>
 
-                    <div id="content3" >
-                        <img src="./img/main/HIGHLANDER-left.png" alt="">
+                    <div id="content3" class="models-content">
+                        <img src="./img/main/HIGHLANDER-left.png" alt="HIGHLANDER">
                     </div>
 
-                    <div id="content4" >
-                        <img src="./img/main/CAMARY-left.png" alt="">
-                    </div>
+                    <!-- <div id="content4" class="content">
+                        <img src="./img/main/CAMARY-left.png" alt="CAMARY">
+                    </div> -->
+
                 </div>
             </div>
 
-            <div class="models-side-wrap">
-                <div class="models-right">
-                    <p>자세히알아보기</p>
-                    <img src="./img/common/moredetail.png" alt="detail">
-                </div>
-            </div>
 
             <div class="description">
                 <div><img src="./img/main/innovation is power.png" alt="innovation"></div>
@@ -143,7 +138,7 @@
                     <div class="description-left">
                         <img src="./img/main/interior.png" alt="mirai-interior">
                     </div>
-                    <div class="description-right">
+                    <div class="description-right-text">
                         <span>Interior and exterior design</span>
                         <p>
                             좌측에서 우측으로 수평축을 강조한 센터페시아는<br>
@@ -185,28 +180,28 @@
 
                     <div class="customise-carimg selected">
                         <ul>
-                            <li class="one"><a href="#"><img class="one active src=" ./img/main/custom-bk.png"
-                                        alt="2021 MIRAI"></a></li>
+                            <!-- <li class="one"><a href="#"><img src="./img/main/custom-bk.png"
+                                        alt="2021 MIRAI"></a></li> -->
 
                             <li class="two"><a href="#"><img class="two" src="./img/main/custom-blue.png"
                                         alt="2021 MIRAI"></a></li>
 
-                            <li class="three"><a href="#"><img class="three" src="./img/main/custom-red.png"
+                            <!-- <li class="three"><a href="#"><img class="three" src="./img/main/custom-red.png"
                                         alt="2021 MIRAI"></a></li>
 
                             <li class="four"><a href="#"><img class="four" src="./img/main/custom-grey.png"
-                                        alt="2021 MIRAI"></a></li>
+                                        alt="2021 MIRAI"></a></li> -->
                         </ul>
                     </div>
 
                     <div class="customise-description">
                         <div class="customise-price">
-                            <span>47,020,000원</span><br>
-                            연비:9.5km/ℓ
+                            <span>47,020,000₩</span><br>
+                            <p>연비:9.5km/ℓ</p>
                         </div>
                         <div class="customise-MPGe">
                             <span>67/64</span><br>
-                            est. MPGe
+                            <p>est.MPGe</p>
                         </div>
                     </div>
                 </div>
@@ -226,7 +221,6 @@
                     <li><img src="./img/main/custom-bg3.png" alt="icon"><a href="#">전시장 찾기</a></li>
                     <li><img src="./img/main/custom-bg4.png" alt="icon"><a href="#">시승 신청하기</a></li>
                 </ul>
-
             </div>
         </section>
 
@@ -247,82 +241,79 @@
                         한국 토요타 자동차의 목표입니다.
                     </p>
                 </div>
-                <img src="./img/main/brandstory.png" alt="brandstory">
-            </div> -->
+                <div> <img src="./img/main/brandstory.png" alt="brandstory"></div>
+            </div>
         </section>
 
         <div id="event-footer-wrap">
-            <section class="event-service">
-                <h2>EVENT & SERVICE</h2>
+            <h2>EVENT & SERVICE</h2>
 
-                <div class="event-contents">
-                    <div class="event-box">
-                        <div class="event-img"><img src="./img/main/event01.png" alt="2021 TOYOTA
+            <div class="event-contents">
+                <div class="event-box">
+                    <div class="event-img"><img src="./img/main/event01.png" alt="2021 TOYOTA
                             DREAM ART CONTEST
                             당선자 발표">
-                            <h4>
-                                2021 TOYOTA<br>
-                                DREAM ART CONTEST<br>
-                                당선자 발표
-                            </h4>
-                        </div>
+                        <h4>
+                            2021 TOYOTA<br>
+                            DREAM ART CONTEST<br>
+                            당선자 발표
+                        </h4>
                     </div>
+                </div>
 
-                    <div class="event-box">
-                        <div class="event-img">
-                            <img src="./img/main/event-02.png" alt="전국 시승회 이벤트">
-                            <h4>
-                                전국 시승회 이벤트 <br>
-                                ‘인조이 유어 힐링 드라이브’
-                            </h4>
-                        </div>
+                <div class="event-box">
+                    <div class="event-img">
+                        <img src="./img/main/event-02.png" alt="전국 시승회 이벤트">
+                        <h4>
+                            전국 시승회 이벤트 <br>
+                            ‘인조이 유어 힐링 드라이브’
+                        </h4>
                     </div>
-
-                    <div class="event-box">
-                        <div class="event-img">
-                            <img src="./img/main/event-03.png" alt="온라인 설문조사 당첨자 발표">
-                            <h4>온라인 설문조사 당첨자 발표</h4>
-                        </div>
+                </div>
+                <div class="event-box">
+                    <div class="event-img">
+                        <img src="./img/main/event-03.png" alt="온라인 설문조사 당첨자 발표">
+                        <h4>온라인 설문조사 당첨자 발표</h4>
                     </div>
-
-                </div>
-        </div>
-
-        <form method="get" class="form-layout">
-            <fieldset>
-                <p>가까운 토요타 전시장에서 시승 이벤트 및 차량 소개 이벤트를 알아보세요</p>
-                <div class="input-layout-box">
-                    <input type="text" name="search" placeholder="Search"
-                        aria-label="type here to search the toyota dealers">
-                    <label for="search"></label><br>
-                    <input type="image" alt="Submit feedback" class="form-input-searchicon">
-                    <label for="image"></label>
-                </div>
-            </fieldset>
-        </form>
-
-        <footer id="footer">
-            <div class="footer-inner">
-                <img src="./img/common/footer-logo.png" alt="toyota">
-                <div class="footer-inner-desc">
-                    <p>이용약관 | 개인정보 처리방침 | CONTACT US | 긴급 출동 서비스 080-525-8255</p>
-                    <address>
-                        사업자: 한국토요타자동차㈜ | 대표: TAKEMURA NOBUYUKI | 사업자등록번호: 120-86-00915 |<br>
-                        주소: 서울특별시 강남구 논현로 508 7층 (역삼동, GS강남타워)
-                    </address>
-                </div>
-                <div class="sns">
-                    <a href="#"><img src="./img/common/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="./img/common/youtube.png" alt="youtube"></a>
-                    <a href="#"><img src="./img/common/instagram.png" alt="instargram"></a>
                 </div>
             </div>
-        </footer>
+
+            <form method="get" class="form-layout">
+                <fieldset>
+                    <p>가까운 토요타 전시장에서 시승 이벤트 및 차량 소개 이벤트를 알아보세요</p>
+                    <div class="input-layout-box">
+                        <input type="text" name="search" placeholder="Search"
+                            aria-label="type here to search the toyota dealers">
+                        <label for="search"></label><br>
+                        <input type="image" alt="Submit feedback" class="form-input-searchicon">
+                        <label for="image"></label>
+                    </div>
+                </fieldset>
+            </form>
+
+            <footer id="footer">
+                <div class="footer-inner">
+                    <img src="./img/common/footer-logo.png" alt="toyota">
+                    <div class="footer-inner-desc">
+                        <p>이용약관 | 개인정보 처리방침 | CONTACT US | 긴급 출동 서비스 080-525-8255</p>
+                        <address>
+                            사업자: 한국토요타자동차㈜ | 대표: TAKEMURA NOBUYUKI | 사업자등록번호: 120-86-00915 |<br>
+                            주소: 서울특별시 강남구 논현로 508 7층 (역삼동, GS강남타워)
+                        </address>
+                    </div>
+                    <div class="sns">
+                        <a href="#"><img src="./img/common/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="./img/common/youtube.png" alt="youtube"></a>
+                        <a href="#"><img src="./img/common/instagram.png" alt="instargram"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
         </section>
 
     </div>
 
-    <div class="sidebar">
+    <!-- <div class="sidebar">
         <ul class="menu">
             <li><a href="#MODELS" onclick="toggleMenu();">MODELS</a></li>
             <li><a href="#DEALERS" onclick="toggleMenu();">DEALERS</a></li>
@@ -330,7 +321,76 @@
             <li><a href="#EVENT" onclick="toggleMenu();">EVENT</a></li>
             <li><a href="#SERVICE" onclick="toggleMenu();">SERVICE</a></li>
         </ul>
-    </div>
+    </div> -->
+
+
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var content4 = document.getElementById("content4");
+
+
+        function open2021Mirai() {
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(200%)";
+            content3.style.transform = "translateX(200%)";
+            content4.style.transform = "translateX(200%)";
+            btn1.style.color = "#000"
+            btn2.style.color = "#ddd"
+            btn3.style.color = "#ddd"
+            btn4.style.color = "#ddd"
+            content1.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+            content4.style.transitionDelay = "0s";
+        }
+
+        function openAvalon() {
+            content1.style.transform = "translateX(200%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(200%)";
+            content4.style.transform = "translateX(200%)";
+            btn2.style.color = "#000"
+            btn1.style.color = "#ddd"
+            btn3.style.color = "#ddd"
+            btn4.style.color = "#ddd"
+            content2.style.transitionDelay = "0.3s";
+            content1.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+            content4.style.transitionDelay = "0s";
+        }
+
+        function openHighlander() {
+            content1.style.transform = "translateX(200%)";
+            content2.style.transform = "translateX(200%)";
+            content3.style.transform = "translateX(0)";
+            content4.style.transform = "translateX(200%)";
+            btn3.style.color = "#000"
+            btn2.style.color = "#ddd"
+            btn1.style.color = "#ddd"
+            btn4.style.color = "#ddd"
+            content3.style.transitionDelay = "0.3s";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content4.style.transitionDelay = "0s";
+        }
+
+        function openCamary() {
+            content1.style.transform = "translateX(200%)";
+            content2.style.transform = "translateX(200%)";
+            content3.style.transform = "translateX(200%)";
+            content4.style.transform = "translateX(0)";
+            btn4.style.color = "#000"
+            btn2.style.color = "#ddd"
+            btn3.style.color = "#ddd"
+            btn1.style.color = "#ddd"
+            content4.style.transitionDelay = "0.3s";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+        }
+    </script>
 </body>
 
 </html>
