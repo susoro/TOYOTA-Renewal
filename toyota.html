@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favi.png" type="image/png">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/common.js"></script>
@@ -36,9 +35,10 @@
                 <li class="mv1">
                     <div class="txt">
                         <h2 class="text">AVALON</h2>
+                        <div class="main_visual-line"></div>
                         <div class="numbertext">
                             <div class="numbertext-space"><a href="#">시승신청하기</a></div>
-                            <div><a href="#">자세히알아보기</a></div>
+                            <div class="numbertext-space"><a href="#">자세히알아보기</a></div>
                         </div>
                     </div>
                 </li>
@@ -46,19 +46,21 @@
                 <li class="mv2">
                     <div class="txt">
                         <h2 class="text">Highlander</h2>
+                        <div class="main_visual-line"></div>
                         <div class="numbertext">
                             <div class="numbertext-space"><a href="#">시승신청하기</a></div>
-                            <div><a href="#">자세히알아보기</a></div>
+                            <div class="numbertext-space"><a href="#">자세히알아보기</a></div>
                         </div>
                     </div>
                 </li>
 
                 <li class="mv3">
                     <div class="txt">
-                        <h2 class="text">2021 MIRAI</h2>
+                        <h2 class="text3">2021 MIRAI</h2>
+                        <div class="line03"></div>
                         <div class="numbertext">
                             <div class="numbertext-space"><a href="#">시승신청하기</a></div>
-                            <div><a href="#">자세히알아보기</a></div>
+                            <div class="numbertext-space"><a href="#">자세히알아보기</a></div>
                         </div>
                     </div>
                 </li>
@@ -68,61 +70,44 @@
         <section id="toyota-models">
             <div class="models-menu">
                 <h2>TOYOTA MODELS</h2>
-                <ul class="models-nav-menu slideList">
-                    <li>
-                        <a href="#">
-                            <div class="product-models">
-                                <figure>
-                                    <figcaption itemprop="model-description">2021 MIRAI</figcaption>
-                                    <img src="./img/main/2021 MIRAI-side.png" alt="2021 MIRAI">
-                                </figure>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="product-models">
-                                <figure>
-                                    <figcaption itemprop="model-description">Avalon</figcaption>
-                                    <img src="./img/main/avalonhybrid-side.png" alt="avalonhybrid">
-                                </figure>
-                            </div>
-                        </a>
-                    </li>
+                <div class="models-nav-menu slideList">
 
-                    <li>
-                        <a href="#">
-                            <div class="product-models">
-                                <figure>
-                                    <figcaption itemprop="model-description">Highlander</figcaption>
-                                    <img src="./img/main/highlander-side.png" alt="highlander">
-                                </figure>
-                            </div>
-                        </a>
-                    </li>
+                    <div class="btn-box">
+                        <button id="btn1" onclick="open2021Mirai()">2021 MIRAI<br><img
+                                src="./img/main/2021 MIRAI-side.png" alt="2021MIRAI"></button>
 
-                    <li>
-                        <a href="#">
-                            <div class="product-models">
-                                <figure>
-                                    <figcaption itemprop="model-description">Camry</figcaption>
-                                    <img src="./img/main/camry-side.png" alt="camry">
-                                </figure>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                        <button id="btn2" onclick="openAvalon()">Avalon<br><img src="./img/main/avalonhybrid-side.png"
+                                alt="avalonhybrid"></button>
+
+                        <button id="btn3" onclick="openHighlander()">Highlander<br><img
+                                src="./img/main/highlander-side.png" alt="Highlander"></button>
+
+                        <button id="btn4" onclick="openCamary()">Camary<br><img src="./img/main/camry-side.png"
+                                alt="Camary"></button>
+                    </div>
+
+
+
+                    <div id="content1" >
+                        <img src="./img/main/2021 MIRAI -left.png" alt="">
+                    </div>
+
+
+                    <div id="content2" >
+                        <img src="./img/main/AVALON-left.png" alt="">
+                    </div>
+
+                    <div id="content3" >
+                        <img src="./img/main/HIGHLANDER-left.png" alt="">
+                    </div>
+
+                    <div id="content4" >
+                        <img src="./img/main/CAMARY-left.png" alt="">
+                    </div>
+                </div>
             </div>
 
             <div class="models-side-wrap">
-                <div class="models-left">
-                    <ul class="models-left-lists">
-                        <li><img src="./img/main/2021 MIRAI -left.png" alt="2021 MIRAI"></li>
-                        <li><img src="./img/main/AVALON-left.png" alt="Avalon"></li>
-                        <li><img src="./img/main/HIGHLANDER-left.png" alt="highlander"></li>
-                        <li><img src="./img/main/CAMARY-left.png" alt="2021 MIRAI"></li>
-                    </ul>
-                </div>
                 <div class="models-right">
                     <p>자세히알아보기</p>
                     <img src="./img/common/moredetail.png" alt="detail">
@@ -339,11 +324,11 @@
 
     <div class="sidebar">
         <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>
-            <li><a href="#services" onclick="toggleMenu();">Service</a></li>
-            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            <li><a href="#MODELS" onclick="toggleMenu();">MODELS</a></li>
+            <li><a href="#DEALERS" onclick="toggleMenu();">DEALERS</a></li>
+            <li><a href="#TOYOTA" onclick="toggleMenu();">TOYOTA</a></li>
+            <li><a href="#EVENT" onclick="toggleMenu();">EVENT</a></li>
+            <li><a href="#SERVICE" onclick="toggleMenu();">SERVICE</a></li>
         </ul>
     </div>
 </body>

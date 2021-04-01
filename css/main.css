@@ -6,19 +6,20 @@
 
 .toggle{
     position: fixed;
-    top: 26px;
-    right:30px;
+    top: 7px;
+    right:100px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    background-color:#000;
+    transform: scale(0.8);
     background: url('../img/common/navbar.png')no-repeat center;
     background-size: 30px;
     cursor:pointer;
     z-index: 1000;
 }
 .toggle .active{
-    border-radius: 50%;
-    background: url('../img/close.png')no-repeat center;
+    background: url('../img/common/navbar.png')no-repeat center;
     background-size: 30px;
     cursor:pointer;
 }
@@ -39,10 +40,9 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 
 
 
-/* 제발좀 돌아가줄래? */
+/* main_visual */
 #main_visual { height: 50vw; text-align: center; position: relative;}
 #main_visual .mv li { height: 50vw; }
-
 #main_visual .mv .mv1 { background: url('../img/main/main-visual03.png') no-repeat center top; background-size: cover; }
 #main_visual .mv .mv2 { background: url('../img/main/main-visual02.png') no-repeat center top; background-size: cover; }
 #main_visual .mv .mv3 { background: url('../img/main/main-visual01.png') no-repeat center top; background-size: cover; }
@@ -50,13 +50,25 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 
 
 #main_visual .txt { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); }
-#main_visual h2 {font-size: 3.25rem; letter-spacing: -2;
-}
+#main_visual h2{font-size: 3.25rem; letter-spacing: -2;
+position: relative; left:30%; top: 230px; color: var(--color-light);}
+#main_visual .text3{color: var(--color-dark);}
 #main_visual .numbertext { font-size: 0.875rem; line-height: 1.5; }
+#main_visual .main_visual-line{width: 500px; border: 1px solid #fff ;
+position: absolute; right: 140px; top: 300px;}
+#main_visual .line03{width: 500px; border: 1px solid #000 ;
+    position: absolute; right: 140px; top: 300px; color:var(--color-dark);}
+.numbertext{display: flex; align-items: center; text-align: center;
+position:absolute; right: 146px; top: 320px;}
+.numbertext a:hover{font-weight: 500;}
+.numbertext-space{font-size: 1.2em; margin: 0 10px;
+background-color:#eee; color: var(--color-dark); padding:5px 15px;
+border-radius: 28px;}
 
 #main_visual .bx-pager { position:absolute; bottom:10.416vw; left:50%; transform: translateX(-50%); }
 #main_visual .bx-pager-item { float:left; }
-#main_visual .bx-pager a {background:#fff; font-size: 0; display:block; width:8px; height:8px; margin:0 5px; border-radius:5px; transition:all 0.2s; }
+#main_visual .bx-pager a {background:#fff; font-size: 0; display:block; width:8px; height:8px; margin:0 5px; border-radius:5px; transition:all 0.2s;
+position: relative; top:120px; }
 #main_visual .bx-pager a.active { background:#e61115; }
 #main_visual .bx-controls-direction a { position: absolute; top: 50%; margin-top: -20px; width: 40px; height: 40px;  text-indent: -9999px; }
 
@@ -67,8 +79,20 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 @media all and (max-width : 991px) {
     #main_visual { height: 93.75vw; }
     #main_visual .mv li { height: 93.75vw; }
-    #main_visual h2 { font-size: 9.765vw; }
+    #main_visual h2 { font-size: 6.9444vw;
+    position: relative; left: 0; top: 200px;}
     #main_visual .bx-pager a {position: relative; top: 60px; }
+    #main_visual .line03,
+    #main_visual .main_visual-line{
+        display:none;
+    }
+    #main_visual .text3{color: var(--color-light);}
+    .numbertext{position: absolute; left:320px; top:300px;}
+    
+    #navbar .navbar-gnb-list{display: none;}
+    #navbar{display: flex; justify-content:space-between;
+    margin:10px 50px; align-items: center;}
+    .toggle{position: absolute; top: -6px;}
 }
 
 
@@ -76,9 +100,13 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 @media all and (max-width : 500px) {
     #main_visual { height: 125vw; }
     #main_visual .mv li { height: 125vw; }
-    #main_visual h2 { font-size: 13.02vw; }
+    #main_visual h2 { font-size: 6.9444vw; position: relative; top: 140px;}
     #main_visual .bx-controls-direction a { display: none; }
     #main_visual .bx-pager a {position: relative; top: 20px;}
+    .numbertext {position: relative; top: 150px;
+    left:100px;}
+    .numbertext a{font-size: 14px;}
+
 }
 
 
@@ -93,25 +121,29 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 
 /* TOYOTA MODELS */
 #toyota-models{margin:95px 60px 0 60px;}
+#toyota-models .models-menu{overflow:hidden}
 #toyota-models .models-menu h2{ position: relative; left:10px;letter-spacing: -1px; margin:95px 30px 0 0px; margin-bottom: 
     150px;}
-#toyota-models .models-nav-menu{display: flex; cursor: pointer; justify-content: space-around;} 
-#toyota-models .models-nav-menu li{font-size: var(--font-medium); font-weight: 700; color:rgb(100, 100, 100,0.3);letter-spacing: -1px;}
-#toyota-models .models-nav-menu li:hover figcaption{
-    color: #000; 
-    font-weight: bold;
-    transition: all 0.5s;
-    transform: translateY(-10px);
-}
-#toyota-models .models-nav-menu li:hover img{
-    opacity: 0.7;
-}
-.models-side-wrap{display: flex;}
-.models-right{display: flex; align-items: center;}
-.models-right p{margin-right: 10px;}
-.models-right img{width: 18px; height:18px;}
-#toyota-models .product-models figure{text-align: center; margin-bottom: 15px;}
-#toyota-models .models-left{ margin:65px 60px 84px 60px;}
+.btn-box{
+    display:flex;
+    justify-content: center;}
+.btn-box button{
+        background:transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        margin-right: 50px;
+        font-size: 24px;
+        color:#ddd;
+    }
+.btn-box button:hover {
+        color: #000;
+        transition: 0.3s;
+        transform: translateY(-10px);
+    }
+#content1{
+        transform: translateX(0px);}
 /* models tablet start */
 
 
