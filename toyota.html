@@ -129,7 +129,7 @@
                         </p>
                     </div>
                     <div class="description-right">
-                        <video muted autoplay loop width="795" height="485">
+                        <video muted autoplay loop width="100%">
                             <source src="video/fuelcell-system.mp4">
                         </video>
                     </div>
@@ -225,12 +225,13 @@
         </section>
 
         <section id="brandstory">
+            
+            <div class="movie_area">
             <h2>BRANDSTORY</h2>
-            <div class="scrollDist"></div>
-
             <video muted autoplay loop>
                 <source src="./video/toyota-brand.mp4">
             </video>
+            </div>
 
             <div class="brandstory-description">
                 <div>
@@ -246,7 +247,7 @@
         </section>
 
         <div id="event-footer-wrap">
-            <h2>EVENT & SERVICE</h2>
+            <h2>EVENT &amp; SERVICE</h2>
 
             <form method="get" class="form-layout">
                 <fieldset>
@@ -255,7 +256,7 @@
                         <input type="text" name="search" placeholder="Search"
                             aria-label="type here to search the toyota dealers">
                         <label for="search"></label><br>
-                        <input type="image" alt="Submit feedback" class="form-input-searchicon">
+                        <input type="image" src="img/common/view-more.png" alt="Submit feedback" class="form-input-searchicon">
                         <label for="image"></label>
                     </div>
                 </fieldset>
@@ -279,12 +280,14 @@
                 </div>
             </footer>
         </div>
-        </section>
 
     </div>
 
 
     <script>
+        
+      
+        
         var content1 = document.getElementById("content1");
         var content2 = document.getElementById("content2");
         var content3 = document.getElementById("content3");
@@ -292,10 +295,10 @@
 
 
         function open2021Mirai() {
-            content1.style.transform = "translateX(0)";
-            content2.style.transform = "translateX(200%)";
-            content3.style.transform = "translateX(200%)";
-            content4.style.transform = "translateX(200%)";
+            content1.style.transform = "translateX(-50%)";
+            content2.style.transform = "translateX(300%)";
+            content3.style.transform = "translateX(300%)";
+            content4.style.transform = "translateX(300%)";
             btn1.style.color = "#000"
             btn2.style.color = "#ddd"
             btn3.style.color = "#ddd"
@@ -307,10 +310,10 @@
         }
 
         function openAvalon() {
-            content1.style.transform = "translateX(200%)";
-            content2.style.transform = "translateX(0)";
-            content3.style.transform = "translateX(200%)";
-            content4.style.transform = "translateX(200%)";
+            content1.style.transform = "translateX(300%)";
+            content2.style.transform = "translateX(-50%)";
+            content3.style.transform = "translateX(300%)";
+            content4.style.transform = "translateX(300%)";
             btn2.style.color = "#000"
             btn1.style.color = "#ddd"
             btn3.style.color = "#ddd"
@@ -322,10 +325,10 @@
         }
 
         function openHighlander() {
-            content1.style.transform = "translateX(200%)";
-            content2.style.transform = "translateX(200%)";
-            content3.style.transform = "translateX(0)";
-            content4.style.transform = "translateX(200%)";
+            content1.style.transform = "translateX(300%)";
+            content2.style.transform = "translateX(300%)";
+            content3.style.transform = "translateX(-50%)";
+            content4.style.transform = "translateX(300%)";
             btn3.style.color = "#000"
             btn2.style.color = "#ddd"
             btn1.style.color = "#ddd"
@@ -340,7 +343,7 @@
             content1.style.transform = "translateX(200%)";
             content2.style.transform = "translateX(200%)";
             content3.style.transform = "translateX(200%)";
-            content4.style.transform = "translateX(0)";
+            content4.style.transform = "translateX(-50%)";
             btn4.style.color = "#000"
             btn2.style.color = "#ddd"
             btn3.style.color = "#ddd"
