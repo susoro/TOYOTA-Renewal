@@ -64,9 +64,9 @@ position: absolute; right: 140px; top: 300px;}
 position:absolute; right: 146px; top: 320px;}
 .numbertext a:hover{font-weight: 500;}
 .numbertext-space{font-size: 1.2em; margin: 0 10px;
-background-color:#eee; color: var(--color-dark); padding:5px 15px;
+color: var(--color-light); padding:5px 15px;
 border-radius: 28px;}
-
+.mv3 .numbertext-space{color: var(--color-dark);}
 #main_visual .bx-pager { position:absolute; bottom:10.416vw; left:50%; transform: translateX(-50%); }
 #main_visual .bx-pager-item { float:left; }
 #main_visual .bx-pager a {background:#fff; font-size: 0; display:block; width:8px; height:8px; margin:0 5px; border-radius:5px; transition:all 0.2s;
@@ -151,8 +151,8 @@ position: relative; top:120px; }
         transform: translateX(-50%);
         transition: 0.3s;
 }
-.models-content img { width: 100%; }
-
+.models-content img { }
+.models-content-desc{font-size: 1em; display:flex; justify-content: flex-end; position: absolute;right: 80px; z-index: 99; }
 
 /* models tablet start */
 /* Tablets */
