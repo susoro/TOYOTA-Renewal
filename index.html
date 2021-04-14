@@ -25,9 +25,10 @@
                 <li class="navbar-list navbar-remove"><a href="#customise">TOYOTA</a></li>
                 <li class="navbar-list navbar-remove"><a href="#event-footer-wrap">EVENT</a></li>
                 <li class="navbar-list navbar-remove"><a href="#event-footer-wrap">SERVICE</a></li>
-                <li><a href="#"><img src="./img/common/navbar.png" alt="navbar"></a></li>
             </ul>
-            <div class="toggle"></div>
+            <div class="toggle" onclick="toggleMenu();">
+                <a href="#"><img src="./img/common/navbar.png" alt="navbar"></a>
+            </div>
         </header>
 
 
@@ -111,7 +112,8 @@
 
             <section id="toyota-desc">
                 <div class="description">
-                    <div class=="description-main-img"><img src="./img/main/innovation is power.png" alt="innovation"></div>
+                    <div class=="description-main-img"><img src="./img/main/innovation is power.png" alt="innovation">
+                    </div>
                     <div class="description-title">
                         <h3>2021 MIRAI</h3>
                         <p>Innovation is power.</p>
@@ -226,12 +228,12 @@
         </section>
 
         <section id="brandstory">
-            
+
             <div class="movie_area">
-            <h2>BRANDSTORY</h2>
-            <video muted autoplay loop>
-                <source src="./video/toyota-brand.mp4">
-            </video>
+                <h2>BRANDSTORY</h2>
+                <video muted autoplay loop>
+                    <source src="./video/toyota-brand.mp4">
+                </video>
             </div>
 
             <div class="brandstory-description">
@@ -257,7 +259,8 @@
                         <input type="text" name="search" placeholder="Search"
                             aria-label="type here to search the toyota dealers">
                         <label for="search"></label><br>
-                        <input type="image" src="img/common/view-more.png" alt="Submit feedback" class="form-input-searchicon">
+                        <input type="image" src="img/common/view-more.png" alt="Submit feedback"
+                            class="form-input-searchicon">
                         <label for="image"></label>
                     </div>
                 </fieldset>
@@ -281,12 +284,19 @@
                 </div>
             </footer>
         </div>
-
     </div>
 
+    <div class="sidebar">
+        <ul class="menu">
+            <li class="navbar-list navbar-remove"><a href="#event-footer-wrap" onclick="toggleMenu();">MODELS</a></li>
+            <li class="navbar-list navbar-remove"><a href="#event-footer-wrap" onclick="toggleMenu();">DEALERS</a></li>
+            <li class="navbar-list navbar-remove"><a href="#customise" onclick="toggleMenu();">TOYOTA</a></li>
+            <li class="navbar-list navbar-remove"><a href="#event-footer-wrap" onclick="toggleMenu();">EVENT</a></li>
+            <li class="navbar-list navbar-remove"><a href="#event-footer-wrap" onclick="toggleMenu();">SERVICE</a></li>
+        </ul>
+    </div>
 
     <script>
-        
         var content1 = document.getElementById("content1");
         var content2 = document.getElementById("content2");
         var content3 = document.getElementById("content3");
