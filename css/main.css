@@ -148,10 +148,10 @@ position: relative; top:120px; }
         position: absolute;
         left: 50%;
         width: 100%;
-        transform: translateX(-50%);
+        transform: translateX(-25%);
         transition: 0.3s;
 }
-.models-content img { }
+.models-content img {text-align: center;}
 .models-content-desc{font-size: 1em; display:flex; justify-content: flex-end; position: absolute;right: 80px; z-index: 99; }
 
 /* models tablet start */
