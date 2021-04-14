@@ -173,7 +173,8 @@ position: relative; top:120px; }
 /*2021 mirai desc*/
 .description-main{width: 1440px; margin:0 auto;}
 .description{display: flex; justify-content:center; position: relative; margin-top: 750px;}
-.description-title{position: absolute; left: 80px; top: 280px;}
+.description-main-img{width: 100%;}
+.description-title{position: absolute; left: 240px; top: 280px; }
 .description-title h3{color: #fff; font-weight:700; font-size:1.866em; }
 .description-title p{color: #fff; font-size: 1.2em; }
 .description-01{display:flex; align-items: center; justify-content: space-between; margin-top: 50px;}
