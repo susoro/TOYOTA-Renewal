@@ -123,8 +123,8 @@ position: relative; top:120px; }
 
 
 /* TOYOTA MODELS */
-#toyota-models{padding:95px 60px 0 60px; position: relative;}
-#toyota-models .models-menu{overflow:hidden}
+#toyota-models{ position: relative;}
+#toyota-models .models-menu{overflow:hidden; }
 #toyota-models .models-menu h2{ position: relative; left:10px;letter-spacing: -1px; margin:95px 30px 0 0px; margin-bottom: 
     50px;}
 .btn-box{
@@ -154,7 +154,7 @@ position: relative; top:120px; }
         transform: translateX(-25%);
         transition: 0.3s;
 }
-.models-content img {text-align: center;}
+.models-content img { height: 100%;}
 .models-content-desc{font-size: 1em; z-index: 99;  text-align: center;}
 .models-content-desc a{ position: relative; left: 470px; }
 /* models tablet start */
@@ -166,7 +166,7 @@ position: relative; top:120px; }
 
 /* Mobile */
 @media all and (max-width : 500px) {
-    .btn-box{flex-wrap: wrap;}
+    .btn-box button{flex-direction: row;}
 }
 
 
@@ -181,39 +181,39 @@ position: relative; top:120px; }
 .description-title{position: absolute; left: 240px; top: 280px; }
 .description-title h3{color: #fff; font-weight:700; font-size:1.866em; }
 .description-title p{color: #fff; font-size: 1.2em; }
+
 .description-01{display:flex; align-items: center; justify-content:  space-around; margin-top: 50px;}
 .description-02{margin-top:115px; display: flex;align-items: center; justify-content: space-around;}
 .description-03{margin-top:115px; display: flex;align-items: center; justify-content:  space-around;}
-
 .description-01 div { width: 50%; }
 .description-02 div { width: -50%; }
 .description-03 div { width: 50%; }
+.description-left span, .description-left p{ margin-left: 120px;}
+.description-left img{width: 100%;height: auto;}
 
-
-
-.description-left,.description-right{font-size: 1.625rem; }
-.description-left span, .description-right-text span{display: block; font-size: 36px; font-weight: bold; margin-bottom:26px;}
-.description-left p ,.description-right-text{line-height: 1.2; font-size: 1.250rem;}
+/* .description-left,.description-right{font-size: 1.25em; } */
+.description-left span, .description-right-text span{display: block; font-size: 1.5em; font-weight: 700; margin-bottom:26px;}
+.description-left p ,.description-right-text p{line-height: 1.2; font-size: 1.3em;}
 .description-right video{line-height: 1.2; font-size: 20px; }
-.description-right-text{margin-left: 100px; }
+/* .description-right-text{margin-left: 100px; } */
 
 
 /* models tablet start */
 /* Tablets */
-@media all and (max-width : 991px) {
-    
-    .description-01,.description-02,.description-03{flex-wrap: wrap;}
+@media all and (max-width : 991px) { 
+    .description-main{text-align: center;}
+    .description-right-text{margin-bottom: 60px;}
+    .description-01,.description-03{flex-wrap: wrap;}
+    .description-02{flex-wrap: wrap-reverse;}
     .description-01 div { width: 100%; }
     .description-02 div { width: 100%; }
-    .description-03 div { width: 100%; flex-wrap: ; }
+    .description-03 div { width: 100%; }
     .description-right video{ max-width: 800px; }
-    .description-left { max-width: 800px; }
+    .description-left { max-width: 800px; margin-bottom: 50px; }
     .description-left img { width: 100%; }
 }
 /* Mobile */
-@media all and (max-width : 500px) {
-    
-}
+@media all and (max-width : 500px) {}
 
 
 
@@ -290,15 +290,10 @@ padding: 10px 10px; justify-content: center; position: relative; top: 280px;}
 #brandstory .movie_area { position: relative; max-width: 1440px; margin: 0 auto; }
 #brandstory h2{ position: absolute; top: 50px; left:5%; letter-spacing: -1px; color:#fff; z-index: 999;}
 #brandstory video{ width: 100%; }
-.brandstory-description{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    margin-top:50px;
-}
+.brandstory-description{display: flex;align-items:center;justify-content: center;margin-top:50px;}
 
 .brandstory-description p{margin-right: 20px;
-text-align: left; font-size: 1.375rem;}
+text-align: left; font-size: 0.2em;}
 
 /* models tablet start */
 /* Tablets */
