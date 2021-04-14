@@ -120,7 +120,7 @@ position: relative; top:120px; }
 
 
 /* TOYOTA MODELS */
-#toyota-models{padding:95px 60px 0 60px;}
+#toyota-models{padding:95px 60px 0 60px; position: relative;}
 #toyota-models .models-menu{overflow:hidden}
 #toyota-models .models-menu h2{ position: relative; left:10px;letter-spacing: -1px; margin:95px 30px 0 0px; margin-bottom: 
     50px;}
@@ -148,12 +148,12 @@ position: relative; top:120px; }
         position: absolute;
         left: 50%;
         width: 100%;
-        transform: translateX(-50%);
+        transform: translateX(-25%);
         transition: 0.3s;
 }
-.models-content img { }
-.models-content-desc{font-size: 1em; display:flex; justify-content: flex-end; position: absolute;right: 80px; z-index: 99; }
-
+.models-content img {text-align: center;}
+.models-content-desc{font-size: 1em; z-index: 99;  text-align: center;}
+.models-content-desc a{ position: relative; top: 110px;}
 /* models tablet start */
 /* Tablets */
 @media all and (max-width : 991px) {
@@ -173,7 +173,8 @@ position: relative; top:120px; }
 /*2021 mirai desc*/
 .description-main{width: 1440px; margin:0 auto;}
 .description{display: flex; justify-content:center; position: relative; margin-top: 750px;}
-.description-title{position: absolute; left: 80px; top: 280px;}
+.description-main-img{width: 100%;}
+.description-title{position: absolute; left: 240px; top: 280px; }
 .description-title h3{color: #fff; font-weight:700; font-size:1.866em; }
 .description-title p{color: #fff; font-size: 1.2em; }
 .description-01{display:flex; align-items: center; justify-content: space-between; margin-top: 50px;}
