@@ -7,9 +7,18 @@ $(document).ready(function () {
 
 });
 
+
+
 // 모바일메뉴 
-$('.m_menu').click(function () {
-  $('.mgnb_wrap').animate({
+$('.hamburger').click(function () {
+  $('.sidebar').animate({
     left: '0'
+  });
+});
+
+
+$('.close').click(function () {
+  $('.sidebar').animate({
+    left: '100%'
   });
 });
