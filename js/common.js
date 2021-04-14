@@ -7,17 +7,18 @@ $(document).ready(function () {
 
 });
 
+
+
 // 모바일메뉴 
-$('.m_menu').click(function () {
-  $('.mgnb_wrap').animate({
+$('.hamburger').click(function () {
+  $('.sidebar').animate({
     left: '0'
   });
 });
 
 
-function toggleMenu(){
-  const menuToggle = document.querySelector('.toggle');
-  const sidebar = document.querySelector('.sidebar');
-  menuToggle.classList.toggle('active');
-  sidebar.classList.toggle('active');
-}
+$('.close').click(function () {
+  $('.sidebar').animate({
+    left: '100%'
+  });
+});
