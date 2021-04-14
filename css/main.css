@@ -56,7 +56,7 @@ font-weight: var(--weight-regualr); letter-spacing:0;}
 
 #main_visual .txt { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); }
 #main_visual h2{font-size: 3.25rem; letter-spacing: -2;
-position: relative; left:30%; top: 230px; color: var(--color-light);}
+position: relative; left:35%; top: 230px; color: var(--color-light);}
 #main_visual .text3{color: var(--color-dark);}
 #main_visual .numbertext { font-size: 0.875rem; line-height: 1.5; }
 #main_visual .main_visual-line{width: 500px; border: 1px solid #fff ;
@@ -174,15 +174,16 @@ position: relative; top:120px; }
 
 
 /*2021 mirai desc*/
-.description-main{width: 1440px; margin:0 auto;}
+.description-main{margin:0 auto;}
 .description{display: flex; justify-content:center; position: relative; margin-top: 750px;}
 .description-main-img{width: 100%;}
+.description-main video{width: 100%;}
 .description-title{position: absolute; left: 240px; top: 280px; }
 .description-title h3{color: #fff; font-weight:700; font-size:1.866em; }
 .description-title p{color: #fff; font-size: 1.2em; }
-.description-01{display:flex; align-items: center; justify-content: space-between; margin-top: 50px;}
-.description-02{margin-top:115px; display: flex;align-items: center; justify-content: space-between;}
-.description-03{margin-top:115px; display: flex;align-items: center; justify-content: space-between;}
+.description-01{display:flex; align-items: center; justify-content:  space-around; margin-top: 50px;}
+.description-02{margin-top:115px; display: flex;align-items: center; justify-content: space-around;}
+.description-03{margin-top:115px; display: flex;align-items: center; justify-content:  space-around;}
 
 .description-01 div { width: 50%; }
 .description-02 div { width: -50%; }
@@ -200,10 +201,11 @@ position: relative; top:120px; }
 /* models tablet start */
 /* Tablets */
 @media all and (max-width : 991px) {
+    
     .description-01,.description-02,.description-03{flex-wrap: wrap;}
     .description-01 div { width: 100%; }
     .description-02 div { width: 100%; }
-    .description-03 div { width: 100%; flex-wrap: wrap-reverse; }
+    .description-03 div { width: 100%; flex-wrap: ; }
     .description-right video{ max-width: 800px; }
     .description-left { max-width: 800px; }
     .description-left img { width: 100%; }
